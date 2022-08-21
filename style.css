@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    /* border: solid 1px black; */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+    background-color: rgb(253, 251, 251);
+    height: 768px;
+    overflow: hidden;
+}
+
+#link {
+    text-decoration: none;
+}
+
+#cabecalho {
+    width: 100%;
+    height: 180px;
+    background-color: #036b52;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    border-bottom: solid 3px #2fc18c;
+}
+
+#topo {
+    position: absolute;
+    left: 220px;
+    top: 10px;
+    color: white;
+    border-bottom: solid 4px #2fc18c;
+}
+
+.header {
+    display: inline-block;
+}
+
+#minha_foto {
+    border: solid 4px #2fc18c;
+    border-radius: 50%;
+    height: 150px;
+    margin-top: 10px;
+}
+
+#titulo {
+    color: white;
+    border-bottom: solid 4px #2fc18c;
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+
+#conteudo {
+    position: relative;
+    top: 180px;
+    height: 508px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.lado-esquerdo {
+    float: left;
+    width: 70%;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: transparent;
+    border-radius: 20px;
+}
+
+.indent {
+    text-indent: 30px;
+}
+
+.lado-direito {
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: transparent;
+    border-radius: 20px;
+}
+.lado-direito, .lado-esquerdo{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+article aside {
+    border: solid 1px yellow;
+    padding: 0;
+    display: inline-block;
+}
+
+#licoes_aprendidas {
+    display: inline-block;
+    list-style-type: none;
+}
+
+#licoes_a_aprender {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.licoes {
+    background-color: #f2f2f2;
+    width: 250px;
+    text-align: center;
+    line-height: 1.1em;
+}
+
+.alinhamento {
+    text-align: center;
+}
+
+#rodape {
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: solid 5px #e6e6e6;
+}
+
+#contato {
+    position: relative;
+    left: 35px;
+    top: 1px;
+    color: black;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+}
+
+.logos {
+    height: 40px;
+    width: 40px;
+}
+
+.tryber {
+    position: relative;
+    float: right;
+    bottom: 50px;
+    right: 10px;
+    color: #036b52;
+    font-family: 'roboto', helvetica;
+    font-size: 14px;
+}
+
+.trybe {
+    position: relative;
+    top: 3px;
+}
+
+@media (max-width: 1100px) {
+    aside {
+        display: none;
+
+    }
+}
+@media (max-width: 520px) {
+    #topo, #titulo {
+        display: none;
+    }
+}
